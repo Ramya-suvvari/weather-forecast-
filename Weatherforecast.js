@@ -94,5 +94,7 @@ button.addEventListener("click", () => {
         .then(function(data) {
             console.log(data);
             showWeatherData(data);
-        });
+        }).catch((error)=>{
+            alert("Invalid Location");
+        })
 });
