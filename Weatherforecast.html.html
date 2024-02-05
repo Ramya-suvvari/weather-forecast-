@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="WeatherPage.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <input class="nameBox" id="nameInput" type="text" placeholder="Enter Location" />
+        <button class="searchbar" id="search-icon"> <i class="fa fa-search"></i> </button>
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    <span id="am-pm"></span>
+                </div>
+                <div class="date" id="date"></div>
+                <div id="placeName" class="placeName">Hyderabad</div>
+
+                <div class="others" id="current-weather-items">
+                </div>
+            </div>
+            <div class="place-container">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" id="currentImage" class="currentImage">
+                <div class="description" id="description"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="description" id="description"></div>
+            <div class="other">
+                <div class="date"></div>
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="date"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="description" id="description"></div>
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="date"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="date"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="date"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="date"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Max - 25.6&#176; C</div>
+                <div class="temp">Min - 35.6&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="WeatherPage.js"></script>
+
+</body>
+
+</html>
